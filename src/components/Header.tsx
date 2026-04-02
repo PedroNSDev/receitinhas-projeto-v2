@@ -37,7 +37,10 @@ const Header = () => {
           <button onClick={() => setMenuOpen(true)} className="p-2 -ml-2 text-foreground">
             <Menu className="w-5 h-5" />
           </button>
-          <h1 className="font-heading font-bold text-lg text-foreground">Receitinhas</h1>
+          <div className="flex items-center gap-2">
+            <img src="src/assets/receitinhaicon..png" alt="Logo" className="w-6 h-6" />
+            <h1 className="font-heading font-bold text-lg text-foreground">Receitinhas</h1>
+          </div>
           <button
             onClick={() => { if (location.pathname !== "/explorar") navigate("/explorar"); }}
             className="p-2 -mr-2 text-foreground"
