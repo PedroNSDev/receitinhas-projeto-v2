@@ -5,7 +5,10 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./",
+  // Use absolute base by default so built asset URLs keep working
+  // even when the current route is not "/".
+  // Override with VITE_BASE_PATH when deploying under a subpath.
+  base: process.env.VITE_BASE_PATH || "/",
   server: {
     host: "::",
     port: 8080,
