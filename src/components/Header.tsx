@@ -38,7 +38,7 @@ const Header = () => {
             <Menu className="w-5 h-5" />
           </button>
           <div className="flex items-center gap-2">
-            <img src="src/assets/receitinhaicon..png" alt="Logo" className="w-6 h-6" />
+            <img src="src/assets/logo.png" alt="Logo" className="w-6 h-6" />
             <h1 className="font-heading font-bold text-lg text-foreground">Receitinhas</h1>
           </div>
           <button

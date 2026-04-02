@@ -11,7 +11,7 @@ export default defineConfig(({ mode }) => ({
   base: process.env.VITE_BASE_PATH || "/",
   server: {
     host: "::",
-    port: 8080,
+    port: 8090,
     hmr: {
       overlay: false,
     },
