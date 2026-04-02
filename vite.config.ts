@@ -11,7 +11,8 @@ export default defineConfig(({ mode }) => ({
   base: process.env.VITE_BASE_PATH || "/",
   server: {
     host: "::",
-    port: 8090,
+    port: 80,
+    allowedHosts: ["chymic-roni-rhythmlessly.ngrok-free.dev", "receitinhas.net.br","tubular-cuchufli-6d9685.netlify.app"],
     hmr: {
       overlay: false,
     },
